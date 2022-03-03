@@ -27,7 +27,7 @@ mat-expansion-panel {
   box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(156 39 176 / 40%);
 }
 
-mat-expansion-panel>a:focus{
+mat-expansion-panel>a:focus{    
   background-color: green;
 }
 
