@@ -1,0 +1,34 @@
+/*.avatar {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .mat-expansion-panel  {
+    background: transparent;
+    color:black;
+  }
+
+  .mat-expansion-panel-header-title {
+    color: black;
+    background: transparent;
+  }**/
+
+mat-expansion-panel ,mat-panel-title{
+  background: transparent;
+  color: black;
+}
+
+mat-expansion-panel:hover {
+  background-color: rgb(223, 217, 217);
+}
+
+mat-expansion-panel {
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(156 39 176 / 40%);
+}
+
+mat-expansion-panel>a:focus{
+  background-color: green;
+}
+
+

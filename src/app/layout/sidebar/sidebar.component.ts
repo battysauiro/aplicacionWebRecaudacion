@@ -1,30 +1,25 @@
-import { Component, NgZone, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import {Router} from "@angular/router";
-import {MatAccordion} from '@angular/material/expansion';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-  
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.css']
 })
-export class AppComponent implements OnInit{
- 
+export class SidebarComponent implements OnInit {
     width;
     height;
     mode:string = 'side';
     open = 'true';
     title = 'Responsive Sidenav Starter';
-    @ViewChild(MatAccordion) accordion: MatAccordion;
-    name = 'Angular';
-    selected?: string = undefined;
     navList: NavList[];
 
     constructor(public ngZone:NgZone,
                 public route: Router,)
     {
         this.navList = [
-            { categoryName: 'Tipo 1', icon: 'face', dropDown:false,
+            { categoryName: 'Tab 1', icon: 'face', dropDown:false,
                 subCategory:
                     [
                         { subCategoryName: 'Item 1', subCategoryLink:'/link', subCategoryQuery: {title: 'query item 1'}, visable: true, },
@@ -54,10 +49,6 @@ export class AppComponent implements OnInit{
                 this.changeMode();
             });
         };
-    }
-    onSelected(item: string) {
-      this.selected = item;
-      this.name = item;
     }
 
     ngOnInit() {

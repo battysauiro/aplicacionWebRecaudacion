@@ -1,0 +1,114 @@
+mat-sidenav-container{
+  height: calc(100vh - 65px);
+  background-color:white;
+  
+}
+
+mat-sidenav mat-sidenav-content{
+  padding: 2rem;
+}
+
+mat-sidenav{
+  background-color: rgb(238, 237, 237);
+  width: 16rem;
+}
+
+mat-toolbar {
+  background-color: #9c27b0 ;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row{
+  height: auto;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  /*margin-top: 16px;*/
+  width: 100px;
+  height: 50;
+  
+  margin-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 10%;
+}
+.mat-list-sidenav {
+  background: transparent;
+  
+}
+.my-expansion-panel-header{
+  color:black;
+  
+  
+}
+
+
+/**
+.mat-expansion-panel-header-title{
+  background-color: blue;
+  color:green;
+} */
+.mat-list-base .mat-list-item {
+  color: black;
+  
+}
+
+mat-icon{
+  margin-right: 10px;
+}
+/**
+.my-expansion-panel-header,
+.my-expansion-panel-header.mat-expanded,
+.my-expansion-panel-header.mat-expanded:hover,
+.my-expansion-panel-header:hover,
+.my-expansion-panel-header.mat-expanded:focus,
+.my-expansion-panel-header.mat-expanded:focus:not([aria-disabled=true]),
+.mat-expansion-panel .my-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+.mat-expansion-panel .my-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]), .mat-expansion-panel .my-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]), .mat-expansion-panel:not(.mat-expanded) .my-expansion-panel-header:hover:not([aria-disabled=true]),
+.my-expansion-panel-header.mat-expanded:hover:not([aria-disabled=true]) {
+  background-color: #99E3E3;
+}*/
+
+.mat-expansion-panel-header.mat-expanded {
+  height: 2.813rem;
+  
+}
+
+.mat-expansion-panel-header.mat-expanded mat-panel-title {
+  color: white ; 
+  background-color: #ab3ed8 ; 
+  border-radius: 5%;
+  padding: 0.3rem 1rem;
+}
+
+
+/** 
+.nav-list-item .mat-expanded span {
+  background-color: red;
+}
+
+.mat-expansion-panel-header.mat-expanded mat-nav-list {
+  background-color: green;
+}
+
+.mat-list-base mat-list-item:focus {
+  background-color: green;
+}
+
+.mat-nav-list .mat-list-item:focus,
+.mat-action-list .mat-list-item:focus,
+.mat-list-option:focus {
+  background: #76b900 !important;
+}*/
+
+mat-list-item:focus {
+  background-color: #d0a3cf !important;
+  border-radius: 5%;
+}
+
+

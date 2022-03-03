@@ -1,16 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { NavigableListItemDirective } from '../navigable-list-item.directive';
+//import { FlexLayoutModule } from '@angular/';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    FooterComponent,NavigableListItemDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    FormsModule, 
+    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
